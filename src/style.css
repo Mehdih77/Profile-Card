@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #2d3248;
+  background-color: #19a2ae;
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: left -40vw top -40vw, left 50vw top 50vh;
+  background-size: 80vw 80vw, 80vw 80vw;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-wrapper {
+  width: 350px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.808);
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 3px rgba(106, 111, 129, 0.5);
+  box-shadow: 0 0 3px rgba(106, 111, 129, 0.5);
+}
+
+.card-header {
+  height: 130px;
+  background-image: url("./images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-header img {
+  width: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 75px;
+  left: 115px;
+  border: 6px solid white;
+}
+
+.card-content {
+  padding-top: 6rem;
+}
+
+.card-content h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.profile-age {
+  color: #666a79;
+  font-weight: normal;
+  font-size: 1.3rem;
+  padding-left: 0.5rem;
+}
+
+.profile-city {
+  color: #666a79;
+  margin-bottom: 1.3rem;
+}
+
+.profile-stats {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+  color: #666a79;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stat-number {
+  font-weight: bold;
+  color: #2d3248;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.stat-caption {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-aspect-ratio: 1 / 1) {
+  html {
+    background-size: 80vh 80vh, 80vh 80vh;
+    background-position: left -40vh top -40vh, left 50vw top 50vh;
+  }
+}
